@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-28T13:20:41.000Z</updated>
+  <updated>2019-03-25T07:16:19.279Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>try catch捕获异常</title>
+    <link href="http://yoursite.com/2019/03/25/try%20catch%E6%8D%95%E8%8E%B7%E5%BC%82%E5%B8%B8/"/>
+    <id>http://yoursite.com/2019/03/25/try catch捕获异常/</id>
+    <published>2019-03-25T07:16:15.907Z</published>
+    <updated>2019-03-25T07:16:19.279Z</updated>
+    
+    <content type="html"><![CDATA[<p>try/catch主要用于捕获异常，只能捕获“同步代码”中的”运行时异常”<br> <a id="more"></a></p><h3 id="try-catch主要用于捕获异常，try-catch语句包含了yigebtry块，和至少有一个catch块或者饿一个finally块，有如下三种tyr声明："><a href="#try-catch主要用于捕获异常，try-catch语句包含了yigebtry块，和至少有一个catch块或者饿一个finally块，有如下三种tyr声明：" class="headerlink" title="try/catch主要用于捕获异常，try/catch语句包含了yigebtry块，和至少有一个catch块或者饿一个finally块，有如下三种tyr声明："></a>try/catch主要用于捕获异常，try/catch语句包含了yigebtry块，和至少有一个catch块或者饿一个finally块，有如下三种tyr声明：</h3><ul><li>try…catch</li><li>try…finally</li><li>try…catch…finally<br><code>try</code>中放入可能会产生异常的语句或函数<br><code>catch</code>块中包含要执行的语句，当<code>try</code>中抛出异常时，<code>catch</code>块会捕获这个异常信息，并执行<code>catch</code>块中的代码，如果在try中没有异常抛出，catch块将会跳过。</li></ul><p><code>finally</code>在 <code>try</code>块和<code>catch</code>块之后执行，无论是否有异常抛出或者是否被捕获它总是执行。当在<code>finally</code>中抛出异常信息时会覆盖<code>try</code>中的异常信息。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">    tryCode - 尝试执行代码块</span><br><span class="line">&#125;</span><br><span class="line">catch(err) &#123;</span><br><span class="line">    catchCode - 捕获错误的代码块</span><br><span class="line">&#125; </span><br><span class="line">finally &#123;</span><br><span class="line">    finallyCode - 无论 try / catch 结果如何都会执行的代码块</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><blockquote><p>try…catch是同步代码，只能捕获“同步代码”中的”运行时异常”，”同步代码”是无法获取如setTimeout、Promise等异步代码的异常<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> try &#123;</span><br><span class="line">    console.log(1);</span><br><span class="line">  setTimeout(function()&#123;</span><br><span class="line">     console.log(2);</span><br><span class="line">     throw new Error(&quot;This is a test error 2&quot;);</span><br><span class="line">  &#125;, 0);</span><br><span class="line">  console.log(3);</span><br><span class="line">  &#125; catch(err) &#123;</span><br><span class="line">  &#125;</span><br><span class="line"> console.log(4);</span><br><span class="line">// 执行结果为：1、3、4、2</span><br></pre></td></tr></table></figure></p></blockquote><p>假如 try {} catch(err) {} 这部分代码为函数f1,setTimeOut里面定义的异步函数，要在f1执行完之后才会执行，所以f1里面的catch是抓不到错误。<br>try … catch 作为同步代码的异常捕获语句，是在阶段 1 执行的。异步的错误，发生阶段 2，由此可知：已经执行完毕的 try … catch 不可能捕获到在它执行完毕后所发生的错误。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;try/catch主要用于捕获异常，只能捕获“同步代码”中的”运行时异常”&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Js" scheme="http://yoursite.com/categories/Js/"/>
+    
+    
+      <category term="Js" scheme="http://yoursite.com/tags/Js/"/>
+    
+  </entry>
   
   <entry>
     <title>HTTP常用状态码</title>
