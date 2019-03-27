@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-25T07:16:19.279Z</updated>
+  <updated>2019-03-27T02:29:36.715Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>moment.js时间转换</title>
+    <link href="http://yoursite.com/2019/03/27/monetJS%E6%97%B6%E9%97%B4%E8%BD%AC%E6%8D%A2/"/>
+    <id>http://yoursite.com/2019/03/27/monetJS时间转换/</id>
+    <published>2019-03-27T02:24:00.547Z</published>
+    <updated>2019-03-27T02:29:36.715Z</updated>
+    
+    <content type="html"><![CDATA[<p> <a href="https://momentjs.com/" target="_blank" rel="noopener">Moment.js</a>是一个javascript日期处理类库。<br> 可如下引入：<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> // import 方式</span><br><span class="line"> import moment from &apos;moment&apos;;</span><br><span class="line"> // require 方式</span><br><span class="line">var moment = require(&apos;moment&apos;);</span><br></pre></td></tr></table></figure></p> <a id="more"></a><h2 id="生命周期-创建-gt-消失"><a href="#生命周期-创建-gt-消失" class="headerlink" title="生命周期 (创建 -&gt; 消失)"></a>生命周期 (创建 -&gt; 消失)</h2><h5 id="1-Mounted-React-renderComponent"><a href="#1-Mounted-React-renderComponent" class="headerlink" title="1. Mounted: (React.renderComponent())"></a>1. Mounted: (React.renderComponent())</h5><p> &emsp;&emsp;React Components被render解析生成对应的DOM节点并被插入浏览器的DOM结构的一个过程 （即在浏览器上看到一个从无到有的相应的过程：mounted已经结束）；</p><h5 id="2-Update-当前state和最近一次的state进行对比，只有当state确实发生改变，并且影响了DOM结构的改变，react才会去改变。"><a href="#2-Update-当前state和最近一次的state进行对比，只有当state确实发生改变，并且影响了DOM结构的改变，react才会去改变。" class="headerlink" title="2.Update: 当前state和最近一次的state进行对比，只有当state确实发生改变，并且影响了DOM结构的改变，react才会去改变。"></a>2.Update: 当前state和最近一次的state进行对比，只有当state确实发生改变，并且影响了DOM结构的改变，react才会去改变。</h5><p>&emsp;&emsp;一个mounted的React Components被重新render的过程。</p><h5 id="3-Unmounted："><a href="#3-Unmounted：" class="headerlink" title="3.Unmounted："></a>3.Unmounted：</h5><p>&emsp;&emsp; 一个mounted的ReactComponents对应的DOM节点被从DOM结构中移除的这样一个过程。</p><blockquote><p>每一个状态React都封装了一个hook（钩子）函数：<br>钩子函数就是指在所有函数执行前，我先执行了的函数，即 钩住 我感兴趣的函数，只要它执行，我就先执行。此概念（或者说现象）跟AOP（面向切面编程）很像。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; &lt;a href=&quot;https://momentjs.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Moment.js&lt;/a&gt;是一个javascript日期处理类库。&lt;br&gt; 可如下引入：&lt;br&gt; &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt; // import 方式&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; import moment from &amp;apos;moment&amp;apos;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; // require 方式&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var moment = require(&amp;apos;moment&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Js" scheme="http://yoursite.com/categories/Js/"/>
+    
+    
+      <category term="Js" scheme="http://yoursite.com/tags/Js/"/>
+    
+  </entry>
   
   <entry>
     <title>try catch捕获异常</title>
